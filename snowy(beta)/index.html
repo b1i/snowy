@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snowy ( BETA )</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="bark.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">snowy.ai</a>
+        <button
+        class="navbar-toggler"
+        type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Docs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+            </ul>
+            <a href="https://github.com/b1i/snowy" target="_blank" class="p-2"><img src="github-mark-white.svg" alt="github logo" width="30px"></a>
+          </div>
+        </div>
+      </nav>
+  
+      <main class="container">
+        <div class="bg-white p-5 rounded">
+          <h1>Welcome to Snowy!</h1>
+          <p class="lead">
+            You're virtual assistant, click on the button and and ask snowy to search for you.
+          </p>
+          <p class="kw p-1">Key words:</p>
+          <ul>
+            <li>Open</li>
+            <li>Search</li>
+          </ul>
+          <!-- <a class="btn btn-lg btn-danger" role="button">View docs &raquo;</a> -->
+        </div>
+      </main>
+  
+      <div class="s-container">
+        <button class="button-49" role="button">SNOWY</button>
+      </div>
+    
+      <footer class="fixed-bottom text-center">
+        <p>created with 	<img src="ccheart_red.svg" alt="pd" width="20px"> by you're friends from the north. </p>
+      </footer>
+    <script src="snowy.js" type="module"></script>
+  </body>
+</html>
